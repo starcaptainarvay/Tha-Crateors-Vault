@@ -1,43 +1,31 @@
-use std::{collections::HashMap, fs::{self, DirEntry}, io::Result, path::Path, sync::LazyLock};
+use std::{collections::HashSet, fs::{self, DirEntry}, io::Result, path::Path, sync::LazyLock};
 
-static IGNORE_LIST: LazyLock<HashMap<&'static str, bool>> = LazyLock::new(|| {
-    let mut map = HashMap::new();
-    map.insert("index_to_manifest", true);
-    map.insert("manifest.yaml", true);
-    map.insert("source", true);
-    map
+static IGNORE_LIST: LazyLock<HashSet<String>> = LazyLock::new(|| {
+    let path = Path::new(".ignore");
+    let contents = fs::read_to_string(path).unwrap_or("".into());
+
+    HashSet::<String>::from_iter(contents.lines().map(String::from))
 });
 
-fn print_dir(entry: DirEntry, out: &mut String, level: usize) -> Result<&mut String> {
-    let dir = entry.path();
-    let tab_space = "  ";
-    let fname = entry.file_name().into_string().unwrap();
-    let ftype = entry.file_type().unwrap();
+fn print_dir(entry: DirEntry, out: &mut String, level: usize) -> Result<()> {
+    let fname = entry.file_name().into_string().unwrap_or_default();
+    if fname.starts_with('.') || IGNORE_LIST.contains(fname.as_str()) { return Ok(()); }
 
-    if !(fname.starts_with(".") || IGNORE_LIST.contains_key(fname.as_str())) {
-        println!("{}", fname);
-        if ftype.is_dir() || ftype.is_file() {
-            let line = format!(
-                "{}{}{}",
-                tab_space.repeat(level),
-                if level > 0 { "- "} else { "" },
-                if ftype.is_dir() { format!("{}", fname) } else { fname }
-            );
+    let ftype = entry.file_type()?;
+    let indent = "  ".repeat(level);
 
-            out.push_str(&line);
-            out.push_str("\n");
+    if ftype.is_dir() {
+        out.push_str(format!("{}{}:\n", indent, fname).as_str());
+        for item in fs::read_dir(entry.path())? {
+            print_dir(item?, out, level + 1)?;
         }
-    } else { return Ok(out) }
-
-    for entry in fs::read_dir(dir)? {
-        let dir = entry.unwrap();
-
-        if print_dir(dir, out, level + 1).is_ok() {
-            continue;
-        }
+    } else if ftype.is_file() {
+        out.push_str(format!("{}- {}\n", indent, fname).as_str());
     }
 
-    Ok(out)
+    println!("Indexed {}", entry.path().display());
+
+    Ok(())
 }
 
 fn main() -> Result<()> {
@@ -49,7 +37,6 @@ fn main() -> Result<()> {
         if print_dir(entry.unwrap(), &mut out, 0).is_ok() {
             continue;
         }
-        // println!("{}", dir.into_string().unwrap());
     }
 
     fs::write(root.join("manifest.yaml").as_path(), out)

@@ -1,0 +1,5 @@
+/source/samplelib-indexer/target/*
+/source/samplelib-indexer/*.lock
+/source/samplelib-indexer/.gitignore
+index_to_manifest
+._*

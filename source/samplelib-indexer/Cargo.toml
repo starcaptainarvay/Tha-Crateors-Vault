@@ -1,0 +1,10 @@
+[package]
+name = "samplelib-indexer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "index_to_manifest"
+path = "src/main.rs"

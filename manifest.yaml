@@ -1,2 +1,177 @@
 808s:
+  YeatxKanKan - @kyd.and.cambria:
+    - (808) -*ggl.wav
+    - (808) 4L.wav
+    - (808) CrashDummy.wav
+    - (808) destroy.wav
+    - (808) F1lithy.wav
+    - (808) Go To 1.wav
+    - (808) Gushy.wav
+    - (808) HardZay.wav
+    - (808) Haze.wav
+    - (808) Just Da Spins.wav
+    - (808) KanKan 1.wav
+    - (808) KanKan 2.wav
+    - (808) KanKan 3.wav
+    - (808) Kankan 4.wav
+    - (808) KanKan 5.wav
+    - (808) KanKan 6.wav
+    - (808) KanKan 7.wav
+    - (808) Loud Zay.wav
+    - (808) Lowend.wav
+    - (808) Mira.wav
+    - (808) Off White.wav
+    - (808) Overused.wav
+    - (808) Sanguine.wav
+    - (808) Spinz 1.wav
+    - (808) Spinz 2 (Dist).wav
+    - (808) Underground.wav
+    - (808) ZayxDro.wav
+    - (808)Yeat 2.wav
+    - (808)Yeat 3.wav
+    - (808)Yeat 4.wav
+    - (808)Yeat 5.wav
+    - (808)Yeat 6 (Sub).wav
+    - (808)Yeat.1wav.wav
 patches:
+claps:
+  YeatxKanKan - @kyd.and.cambria:
+    - Basic Trap Clap .wav
+    - BigBank Clap.wav
+    - Clap Like Snare.wav
+    - ClapSnare.wav
+    - Delay Clap.wav
+    - Fraction Clap.wav
+    - Go To Yeat Clap 1.wav
+    - Go To Yeat Clap 2.wav
+    - Go To Yeat Clap 3.wav
+    - Juiced Up* Clap.wav
+    - Kan x Yeat Clap.wav
+    - Kankan Clap 1.wav
+    - KanKan Clap 2 (Hard).wav
+    - Mad About That Clap.wav
+    - Softy Clap.wav
+    - Sorry Bout That Clap.wav
+    - Thug Clap.wav
+chants:
+  YeatxKanKan - @kyd.and.cambria:
+    - Anime Girl Chant.wav
+    - Any Plugg Kan Chant.wav
+    - Clean Chant.wav
+    - High Chant.wav
+    - Long Crowd Chant.wav
+    - My Fav Chant.wav
+    - Whew Chant.wav
+    - Zaytoven Go To.wav
+hi-hats:
+  open hats:
+    YeatxKanKan - @kyd.and.cambria:
+      - Basic Open Hat With Ding.wav
+      - Basic Open Hat.wav
+      - Fast Open Hat.wav
+      - Go To Open Hat 1.wav
+      - Go To Open Hat 2.wav
+      - Go To Open Hat 3.wav
+      - Money Twerk Open Hat.wav
+      - Open Hat Roll 1.wav
+      - Open Hat Roll 2.wav
+      - Open Hat Roll 3.wav
+      - Open Hat Roll 4.wav
+      - Perx Open Hat.wav
+      - Phaser Open Hat.wav
+      - s0what Open Hat.wav
+  closed hats:
+    YeatxKanKan - @kyd.and.cambria:
+      - YeatxKan Hat 5.wav
+      - Ain Goin' To Heaven Hat.wav
+      - Artdeala hat.wav
+      - Click Hat.wav
+      - Fuzzy Hat.wav
+      - Goin' To Hell Hat.wav
+      - HighHat.wav
+      - Hit Hat.wav
+      - KanCanDoIt Hat.wav
+      - NoGohat.wav
+      - Off The Lot Hat.flac
+      - Picthed Down Hat.wav
+      - Quick Hat.wav
+      - s0what hat.wav
+      - Slight Air Reverb.wav
+      - Tizzle Sizzle Hat.wav
+      - YeatxKan Hat 1.wav
+      - YeatxKan Hat 2.wav
+      - YeatxKan Hat 3.wav
+      - YeatxKan Hat 4.wav
+percussion:
+  YeatxKanKan - @kyd.and.cambria:
+    - Yeat Bell 4.wav
+    - Always Alive Bongo.wav
+    - AyeGoodMorninKanye Perc.wav
+    - BubbleGame Perc.wav
+    - dRugl0ver perc.wav
+    - Go To YeatxKan Perc 1.flac
+    - Go To YeatxKan Perc 2.wav
+    - Go To YeatxKan Perc 3.wav
+    - Go To YeatxKan Perc 4.wav
+    - Go To YeatxKan Perc 5.wav
+    - Go To YeatxKan Perc 6.wav
+    - Hiangle Perc.wav
+    - IdekPerc.wav
+    - Laser Pew Perc.wav
+    - Money Twerk Triangle.wav
+    - Nun 2 Me 2 Perc.wav
+    - Pierre Perc.wav
+    - RimPerc.wav
+    - Rimshot perc.wav
+    - Smyea Perc.wav
+    - Snap Perc.wav
+    - snarereplacer Rim:Perc.wav
+    - SoloDolo Perc.wav
+    - Stomp Perc.wav
+    - VampBongoPerc.wav
+    - Weird Door Rattle Perc.wav
+    - Wrong End Perc.wav
+    - Yeat Bell 1.wav
+    - Yeat Bell 2.wav
+    - Yeat Bell 3.wav
+snares:
+  YeatxKanKan - @kyd.and.cambria:
+    - Bop Snare.wav
+    - DrumKnock Snare.wav
+    - Fraction Snare.wav
+    - Go To Snare 1.wav
+    - Go To Snare 2.wav
+    - Go To Snare 3.wav
+    - Go To Snare 4.wav
+    - Goin' To Hell Snare.wav
+    - Hard Hittter Snare.wav
+    - Hard Rock Snare.wav
+    - High Up There Snare.wav
+    - Jackpot Snare.wav
+    - Kankan Type Snare.wav
+    - Lean Cuisine Snare.wav
+    - Mexikodro Snare.wav
+    - Money Twerk Snare.wav
+    - Nun To Me Snare.wav
+    - Phonkey Snare.wav
+    - Roller Snare.flac
+    - s0what Snare.wav
+    - Snare And A Clap.wav
+    - Uh Huh Snare.wav
+    - Yeat Esspicialy Snare.wav
+    - YeatxKan Snare 1.wav
+    - YeatxKan Snare 2.wav
+    - YeatxKan Snare 3.flac
+    - YeatxKan Snare 4.wav
+    - YeatxKan Snare 5.wav
+    - Young Chop Snare.wav
+sfx:
+  YeatxKanKan - @kyd.and.cambria:
+    - Video Game Riser.wav
+    - Aint Stoppin Hat Riser.wav
+    - Chimes (Put Flanger On This).wav
+    - Fuck12 .wav
+    - Goin Back 2 Ella Perc.wav
+    - Goin To Hell Lion Effect.wav
+    - Hat Riser.wav
+    - Star Wars Gun Perc.wav

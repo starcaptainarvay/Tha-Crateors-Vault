@@ -40,6 +40,7 @@ kicks:
     - Bd1.wav
     - Bdrum.wav
 patches:
+  - DMD_mpd218_mapping.cst
 claps:
   YeatxKanKan - @kyd.and.cambria:
     - Basic Trap Clap .wav
@@ -172,6 +173,9 @@ snares:
     - YeatxKan Snare 5.wav
     - Young Chop Snare.wav
 sfx:
+  RVA scratchpad:
+    - flanger_chime_riser_1.wav
+    - flanger_chime_riser_1.mp3
   YeatxKanKan - @kyd.and.cambria:
     - Video Game Riser.wav
     - Aint Stoppin Hat Riser.wav
